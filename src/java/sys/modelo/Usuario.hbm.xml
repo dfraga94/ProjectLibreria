@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16-sep-2023 10:27:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sys.modelo.Usuario" table="usuario" catalog="dbweb2" optimistic-lock="version">
+        <id name="codUsu" type="int">
+            <column name="codUsu" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreUsuario" type="string">
+            <column name="nombre_usuario" length="45" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
